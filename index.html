@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="min-h-dvh w-full bg-slate-50 text-slate-800 relative">
+      <!-- header -->
+      <header
+        class="flex justify-between items-center pt-4 absolute top-0 right-4 left-4"
+      >
+        <!-- logo -->
+        <div class="flex gap-2 items-center">
+          <a href="" class="no-underline">
+            <img src="./assets/logo.png" alt="logo" class="w-14" />
+          </a>
+          <h1 class="font-semibold text-xl">SAJIBUR</h1>
+        </div>
+
+        <!-- mobile menubar -->
+        <div class="bg-slate-200 relative sm:block lg:hidden" id="menu">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+
+        <!-- navbar -->
+        <div class="hidden lg:flex items-center gap-40 xl:gap-72">
+          <nav class="flex gap-4">
+            <a
+              href="#"
+              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              >Top Property</a
+            >
+            <a
+              href="#"
+              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              >New Projects</a
+            >
+            <a
+              href="#"
+              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              >Contact</a
+            >
+          </nav>
+          <div class="flex gap-4">
+            <button
+              class="px-4 py-2 rounded-full bg-slate-200 text-md tracking-tighter"
+            >
+              Sign up
+            </button>
+            <button
+              class="px-4 py-2 rounded-full bg-slate-800 text-slate-50 text-md tracking-tighter"
+            >
+              Login in
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- hero section -->
+        <div class="flex px-4 md:px-0 md:pl-4 bg-amber-200 gap-4">
+          <!-- left section -->
+          <section class="pt-16 md:pt-24 md:flex-1 lg:flex-[2]">
+            <h1
+              class="text-5xl lg:text-6xl xl:text-8xl font-semibold tracking-tighter leading-tight lg:leading-snug lg:max-w-[30rem] xl:min-w-[40rem]"
+            >
+              Going Above and Beyond To Find Your Next Home
+            </h1>
+            <p
+              class="text-sm lg:text-base xl:text-xl tracking-wide text-justify pt-2 lg:max-w-[30rem]"
+            >
+              No One Has More Experience Or Expertise To Help You Than An Agent
+              Who Is A Realtor. If you have the opportunity to suggest a real
+              estate agent to anyone, think of me A referral from you is the
+              highest compliment I can receive
+            </p>
+            <!-- search properties -->
+            <div
+              class="relative flex items-center bg-slate-200 rounded-full w-fit mt-4"
+            >
+              <!-- search input -->
+              <div class="relative">
+                <span
+                  class="material-symbols-outlined absolute top-2 lg:top-[0.70rem] left-2 lg:left-3 text-sm md:text-base lg:text-xl"
+                >
+                  search
+                </span>
+                <input
+                  type="text"
+                  class="rounded-full px-5 py-3 pl-6 lg:pl-9 w-[4.2rem] md:w-28 lg:w-full text-[10px] md:text-xs lg:text-base bg-transparent tracking-tighter"
+                  placeholder="Search properties"
+                />
+              </div>
+
+              <!-- line -->
+              <div
+                class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[4.5rem] md:left-[6.5rem] lg:left-64"
+              ></div>
+
+              <!-- location -->
+              <div
+                class="rounded-full relative flex items-center pl-2 md:pl-0 lg:pl-3"
+              >
+                <span class="material-symbols-outlined text-sm lg:text-xl">
+                  location_on
+                </span>
+                <select
+                  name="location"
+                  id="location"
+                  class="bg-transparent text-xs lg:text-base tracking-tighter"
+                >
+                  <option selected="selected" class="hidden">Location</option>
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="germany">Germany</option>
+                </select>
+              </div>
+
+              <!-- line -->
+              <div
+                class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[10rem] md:left-[12.2rem] lg:left-[23rem]"
+              ></div>
+
+              <!-- pricing -->
+              <div
+                class="bg-slate-200 rounded-full flex items-center ml-2 md:ml-3 lg:ml-4"
+              >
+                <span class="material-symbols-outlined text-xs lg:text-xl">
+                  shoppingmode
+                </span>
+                <select
+                  name="pricing"
+                  id="pricing"
+                  class="bg-transparent text-xs lg:text-base tracking-tighter"
+                >
+                  <option class="hidden">Pricing</option>
+                  <option value="100">$100</option>
+                  <option value="200">$200</option>
+                  <option value="300">$300</option>
+                </select>
+              </div>
+
+              <!-- search button -->
+              <button
+                class="bg-slate-800 text-slate-50 px-8 py-3 rounded-full ml-2 text-xs lg:text-base"
+              >
+                Search
+              </button>
+            </div>
+
+            <!-- Happy Clients -->
+            <div class="flex gap-36 pt-5">
+              <div class="flex items-center relative">
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-0 bg-[url('assets/person.png')] bg-cover"
+                ></div>
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-6 bg-[url('assets/person.png')] bg-cover"
+                ></div>
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-12 bg-[url('assets/person.png')] bg-cover"
+                ></div>
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-[72px] bg-[url('assets/person.png')] bg-cover"
+                ></div>
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-24 bg-[url('assets/person.png')] bg-cover"
+                ></div>
+              </div>
+              <p class="text-sm lg:text-base lg:max-w-96">
+                The best time to buy a home is always five years ago. 500+ Happy
+                Clients in Bangladesh
+              </p>
+            </div>
+          </section>
+
+          <!-- right section -->
+          <section class="flex-1 hidden md:block">
+            <img src="./assets/window.jpg" alt="house1" class="h-full" />
+          </section>
+        </div>
+        <!-- end hero -->
+        <!-- companies -->
+
+        <div class="flex flex-col mt-8 md:mt-16 px-4">
+          <h3 class="text-lg md:text-2xl mb-6 text-center">
+            Trusted By 100+ industry leaders
+          </h3>
+          <div class="flex gap-4 md:gap-8 lg:gap-16 flex-wrap justify-center">
+            <img
+              src="assets/logos/spotify.jpeg"
+              alt=""
+              class="w-20 md:w-24 lg:w-24 xl:w-32 object-contain"
+            />
+            <img
+              src="assets/logos/google.png"
+              alt=""
+              class="w-20 md:w-24 lg:w-24 xl:w-32 object-contain"
+            />
+            <img
+              src="assets/logos/siemens.jpeg"
+              alt=""
+              class="w-20 md:w-24 lg:w-24 xl:w-32 object-contain"
+            />
+            <img
+              src="assets/logos/microsoft.png"
+              alt=""
+              class="w-20 md:w-24 lg:w-24 xl:w-32 object-contain"
+            />
+            <img
+              src="assets/logos/tinder.png"
+              alt=""
+              class="w-20 md:w-24 lg:w-24 xl:w-32 object-contain"
+            />
+            <img
+              src="assets/logos/mongodb.jpeg"
+              alt=""
+              class="w-20 md:w-24 lg:w-24 xl:w-32 object-contain"
+            />
+          </div>
+        </div>
+        <section class="flex flex-col gap-10 px-4 pt-8 md:pt-14 lg:pt-20">
+          <!-- projects -->
+
+          <div class="flex justify-between items-center">
+            <h2 class="text-xl md:text-3xl">Our Top Projects 2023</h2>
+            <button
+              class="px-6 py-2 md:text-base lg:text-lg border border-slate-500 rounded-full"
+            >
+              See All
+            </button>
+          </div>
+          <!-- project images -->
+          <div class="flex gap-6 flex-wrap">
+            <!-- 1 -->
+            <div class="flex flex-col gap-2 flex-1 min-w-72">
+              <img
+                src="./assets/house1.jpg"
+                alt=""
+                class="h-96 object-cover rounded-sm"
+              />
+              <h3 class="text-sm md:text-base lg:text-lg">Darth Vader House</h3>
+              <p class="tracking-tighter text-sm md:text-base xl:text-lg">
+                854 Avacoda Ave, USA
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="flex flex-col gap-2 flex-1 min-w-72">
+              <img
+                src="./assets/house1.jpg"
+                alt=""
+                class="h-96 object-cover rounded-sm"
+              />
+              <h3 class="text-sm md:text-base lg:text-lg">Birchwood House</h3>
+              <p class="tracking-tighter text-sm md:text-base xl:text-lg">
+                2F, 4035-1 Ikenobecho, Tsuzuki-ku, Yokohama
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="flex flex-col gap-2 flex-1 min-w-72">
+              <img
+                src="./assets/house1.jpg"
+                alt=""
+                class="h-96 object-cover rounded-sm"
+              />
+              <h3 class="text-sm md:text-base lg:text-lg">
+                The Never-Ending Story
+              </h3>
+              <p class="tracking-tighter text-sm md:text-base xl:text-lg">
+                8F, 5-24-2, Sendagaya, Shibuya-ku, USA
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="flex flex-col gap-2 flex-1 min-w-72">
+              <img
+                src="./assets/house1.jpg"
+                alt=""
+                class="h-96 object-cover rounded-sm"
+              />
+              <h3 class="text-sm md:text-base lg:text-lg">
+                The Never-Ending Story
+              </h3>
+              <p class="tracking-tighter text-sm md:text-base xl:text-lg">
+                8F, 5-24-2, Sendagaya, Shibuya-ku, USA
+              </p>
+            </div>
+          </div>
+
+          <!-- About -->
+          <section
+            class="pt-12 md:pt-32 lg:pt-12 flex gap-6 lg:gap-8 xl:gap-12 flex-wrap bg-slate-200"
+          >
+            <!-- left  -->
+            <div class="flex flex-col gap-2 flex-1">
+              <img
+                src="./assets/worker.jpg"
+                alt="worker"
+                class="h-full object-cover"
+              />
+              <!-- social media -->
+              <div class="flex gap-3 items-center justify-end">
+                <img
+                  src="./assets/social media/linkedin.png"
+                  alt=""
+                  class="w-6 md:w-[26px]"
+                />
+                <img
+                  src="./assets/social media/instagram.png"
+                  alt=""
+                  class="w-6 md:w-7"
+                />
+                <img
+                  src="./assets/social media/facebook.png"
+                  alt=""
+                  class="w-6 md:w-6 h-6 object-contain"
+                />
+                <img
+                  src="./assets/social media/twitter.png"
+                  alt=""
+                  class="w-6 md:w-7"
+                />
+              </div>
+            </div>
+
+            <!-- right -->
+            <div
+              class="flex flex-col gap-5 xl:gap-10 flex-1 lg:flex-[2] xl:pt-2"
+            >
+              <h1 class="text-5xl md:text-6xl xl:text-7xl">About Us</h1>
+              <h3
+                class="text-2xl md:text-4xl xl:text-5xl leading-snug lg:tracking-tighter"
+              >
+                The potential of a property is as good as the person investing
+                in it.
+              </h3>
+              <p
+                class="text-md md:text-lg xl:text-xl text-justify lg:pt-5 xl:pt-10"
+              >
+                Your best investment opportunity won't fit into a safety deposit
+                box, but you can live in it.<b
+                  >Realtors are matchmakers that introduce people to homes until
+                  they fall in love with one. Then they're the wedding
+                  planner.</b
+                >
+              </p>
+              <p class="text-md md:text-lg xl:text-xl text-justify">
+                A house is made of bricks and beams. A home is made of hopes and
+                dreams. We'll help you find your home. If you have the
+                opportunity to suggest a real estate agent to anyone, think of
+                me. It's 6:30am - do you know where your next home is going to
+                be?
+              </p>
+
+              <!-- milestone -->
+              <div class="flex justify-between pt-4 lg:pt-10 gap-4 lg:gap-0">
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <h1 class="text-2xl md:text-3xl lg:text-4xl">500+</h1>
+                  <p
+                    class="max-w-16 md:max-w-20 leading-tight lg:leading-5 text-sm md:text-base lg:text-lg lg:tracking-tighter"
+                  >
+                    Projects Completed
+                  </p>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <h1 class="text-2xl md:text-3xl lg:text-4xl">10k+</h1>
+                  <p
+                    class="max-w-16 md:max-w-16 leading-tight lg:leading-5 text-sm md:text-base lg:text-lg lg:tracking-tighter"
+                  >
+                    Happy Clients
+                  </p>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <h1 class="text-2xl md:text-3xl lg:text-4xl">8k+</h1>
+                  <p
+                    class="max-w-16 md:max-w-16 leading-tight lg:leading-5 text-sm md:text-base lg:text-lg lg:tracking-tighter"
+                  >
+                    Clients Reviews
+                  </p>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <h1 class="text-2xl md:text-3xl lg:text-4xl">50+</h1>
+                  <p
+                    class="max-w-16 md:max-w-16 leading-tight lg:leading-5 text-sm md:text-base lg:text-lg lg:tracking-tighter"
+                  >
+                    New Projects
+                  </p>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-2">
+                  <h1 class="text-2xl md:text-3xl lg:text-4xl">3.5M$</h1>
+                  <p
+                    class="max-w-16 md:max-w-16 leading-tight lg:leading-5 text-sm md:text-base lg:text-lg lg:tracking-tighter"
+                  >
+                    New Funds
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end about -->
+        </section>
+        <!-- end project -->
+
+        <!-- search  -->
+        <section>
+          <div class="pt-14 flex flex-col items-center md:gap-2 lg:gap-8">
+            <h1 class="md:text-2xl lg:text-3xl text-center">
+              Invest in Your Dream Home: Buy the Best <br />
+              Property Today!
+            </h1>
+            <!-- search properties -->
+            <div
+              class="relative flex items-center bg-slate-200 rounded-full w-fit mt-4"
+            >
+              <!-- search input -->
+              <div class="relative">
+                <span
+                  class="material-symbols-outlined absolute top-2 lg:top-[0.70rem] left-2 lg:left-3 text-sm md:text-base lg:text-xl"
+                >
+                  search
+                </span>
+                <input
+                  type="text"
+                  class="rounded-full px-5 py-3 pl-6 lg:pl-9 w-[4.2rem] md:w-28 lg:w-full text-[10px] md:text-xs lg:text-base bg-transparent tracking-tighter"
+                  placeholder="Search properties"
+                />
+              </div>
+
+              <!-- line -->
+              <div
+                class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[4.5rem] md:left-[6.5rem] lg:left-64"
+              ></div>
+
+              <!-- location -->
+              <div
+                class="rounded-full relative flex items-center pl-2 md:pl-0 lg:pl-3"
+              >
+                <span class="material-symbols-outlined text-sm lg:text-xl">
+                  location_on
+                </span>
+                <select
+                  name="location"
+                  id="location"
+                  class="bg-transparent text-xs lg:text-base tracking-tighter"
+                >
+                  <option selected="selected" class="hidden">Location</option>
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="germany">Germany</option>
+                </select>
+              </div>
+
+              <!-- line -->
+              <div
+                class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[10rem] md:left-[12.2rem] lg:left-[23rem]"
+              ></div>
+
+              <!-- pricing -->
+              <div
+                class="bg-slate-200 rounded-full flex items-center ml-2 md:ml-3 lg:ml-4"
+              >
+                <span class="material-symbols-outlined text-xs lg:text-xl">
+                  shoppingmode
+                </span>
+                <select
+                  name="pricing"
+                  id="pricing"
+                  class="bg-transparent text-xs lg:text-base tracking-tighter"
+                >
+                  <option class="hidden">Pricing</option>
+                  <option value="100">$100</option>
+                  <option value="200">$200</option>
+                  <option value="300">$300</option>
+                </select>
+              </div>
+
+              <!-- search button -->
+              <button
+                class="bg-slate-800 text-slate-50 px-8 py-3 rounded-full ml-2 text-xs lg:text-base"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- property listing -->
+        <section class="flex gap-4 flex-wrap pt-6 px-4">
+          <div class="flex flex-col gap-2 flex-1">
+            <img src="./assets/house1.jpg" alt="" class="" />
+            <h1 class="text-3xl">$235,890</h1>
+            <p class="text-sm md:text-sm lg:text-base tracking-tighter">
+              Buying a bigger home doesnt necessarily mean spending more money.
+            </p>
+            <h1 class="text-sm md:text-xs lg:text-base tracking-tighter">
+              4800 WHITESBURG DRIVE, SUITE 102, USA
+            </h1>
+            <div class="flex gap-1 lg:gap-3">
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 lg:w-24 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1600 SFT</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >... More</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 flex-1">
+            <img src="./assets/house1.jpg" alt="" class="" />
+            <h1 class="text-3xl">
+              <span class="line-through text-2xl pr-4">$325,234</span>$235,890
+            </h1>
+            <p class="text-sm md:text-sm lg:text-base tracking-tighter">
+              Buying a bigger home doesnt necessarily mean spending more money.
+            </p>
+            <h1 class="text-sm md:text-xs lg:text-base tracking-tighter">
+              4800 WHITESBURG DRIVE, SUITE 102, USA
+            </h1>
+            <div class="flex gap-1 lg:gap-3">
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 lg:w-24 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1600 SFT</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >... More</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 flex-1">
+            <img src="./assets/house1.jpg" alt="" class="" />
+            <h1 class="text-3xl">$235,890</h1>
+            <p class="text-sm md:text-sm lg:text-base tracking-tighter">
+              Buying a bigger home doesnt necessarily mean spending more money.
+            </p>
+            <h1 class="text-sm md:text-xs lg:text-base tracking-tighter">
+              4800 WHITESBURG DRIVE, SUITE 102, USA
+            </h1>
+            <div class="flex gap-1 lg:gap-3">
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 lg:w-24 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1600 SFT</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >... More</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 flex-1">
+            <img src="./assets/house1.jpg" alt="" class="" />
+            <h1 class="text-3xl">$235,890</h1>
+            <p class="text-sm md:text-sm lg:text-base tracking-tighter">
+              Buying a bigger home doesnt necessarily mean spending more money.
+            </p>
+            <h1 class="text-sm md:text-xs lg:text-base tracking-tighter">
+              4800 WHITESBURG DRIVE, SUITE 102, USA
+            </h1>
+            <div class="flex gap-1 lg:gap-3">
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 lg:w-24 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >1600 SFT</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >... More</span
+              >
+              <span
+                class="text-xs lg:text-base w-16 text-center h-5 lg:h-7 bg-slate-200 rounded-full"
+                >2</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- more -->
+        <div class="flex justify-center pt-4">
+          <p class="px-4 py-2 rounded-full text-xs lg:text-base bg-slate-200">
+            ... 22 More
+          </p>
+        </div>
+
+        <!-- contact us -->
+        <section>
+          <div
+            class="bg-slate-800 flex flex-col items-center gap-14 pt-20 md:pt-24 mt-6 md:mt-12 pb-20"
+          >
+            <h1
+              class="text-2xl md:text-3xl lg:text-5xl text-slate-100 text-center"
+            >
+              Making Real Estate Simple, Seamless,<br />and Rewarding
+            </h1>
+            <button
+              class="px-6 py-2 lg:py-3 bg-slate-100 rounded-full text-base md:text-lg xl:text-xl tracking-wider"
+            >
+              Contact us
+            </button>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <section class="pt-8">
+          <hr class="bg-slate-300 w-full h-[2px]" />
+          <div class="flex flex-col items-center gap-6 mt-10">
+            <div class="flex items-center gap-1 md:gap-3 ">
+              <img src="assets/logo.png" alt="logo" />
+              <h5 class="text-md md:text-2xl font-bold">SAJIBUR</h5>
+            </div>
+
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/social media/linkedin.png"
+                alt=""
+                class="w-[20px] md:w-[26px]"
+              />
+              <img
+                src="./assets/social media/instagram.png"
+                alt=""
+                class="w-5 md:w-7"
+              />
+              <img
+                src="./assets/social media/facebook.png"
+                alt=""
+                class="w-5 md:w-6 h-5 md:h-6 object-contain"
+              />
+              <img src="./assets/social media/twitter.png" alt="" class="w-5 md:w-7" />
+            </div>
+
+            <div class="flex items-center text-slate-500 gap-4 md:gap-14 pt-5">
+              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl">Home</a>
+              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+                >About</a
+              >
+              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+                >Property</a
+              >
+              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+                >Projects</a
+              >
+              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+                >Pricing</a
+              >
+              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+                >Contact</a
+              >
+            </div>
+
+            <div class="w-full px-4 lg:px-20">
+              <hr class="bg-slate-200 h-[2px]" />
+            </div>
+
+            <div class="flex justify-between w-full px-4 lg:px-20">
+              <p class="text-xs md:text-sm  lg:text-lg text-slate-500">SAJIBUR International Ltd.2023</p>
+              <p class="text-xs md:text-sm lg:text-lg text-slate-500">Terms and Conditions</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- end wrapper -->
+    </div>
+  </body>
+</html>
