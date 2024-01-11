@@ -16,7 +16,7 @@
     <div class="min-h-dvh w-full bg-slate-50 text-slate-800 relative">
       <!-- header -->
       <header
-        class="flex justify-between items-center pt-4 absolute top-0 right-4 left-4"
+        class="flex justify-between lg:justify-around items-center pt-4 absolute top-0 right-4 left-4 xl:px-20"
       >
         <!-- logo -->
         <div class="flex gap-2 items-center">
@@ -27,175 +27,182 @@
         </div>
 
         <!-- mobile menubar -->
-        <div class="md:text-slate-50  relative sm:block lg:hidden" id="menu">
+        <div class="md:text-slate-50 relative sm:block lg:hidden" id="menu">
           <span class="material-symbols-outlined"> menu </span>
         </div>
 
         <!-- navbar -->
-        <div class="hidden lg:flex items-center gap-40 xl:gap-72">
-          <nav class="flex gap-4">
+        <!-- <div class="hidden lg:flex items-center  lg:gap-64 xl:gap-72 2xl:gap-0 2xl:flex-[2] 2xl:justify-around"> -->
+        <div class="hidden lg:flex items-center xl:gap-72 pr-10 ">
+          <nav class="flex gap-4 lg:gap-8">
             <a
               href="#"
-              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              class="text-md 2xl:text-2xl tracking-tighter text-slate-600 hover:text-slate-800"
               >Home</a
             >
             <a
               href="#"
-              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              class="text-md 2xl:text-2xl tracking-tighter text-slate-600 hover:text-slate-800"
               >About</a
             >
             <a
               href="#"
-              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              class="text-md 2xl:text-2xl tracking-tighter text-slate-600 hover:text-slate-800"
               >Top Property</a
             >
             <a
               href="#"
-              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              class="text-md 2xl:text-2xl tracking-tighter text-slate-600 hover:text-slate-800"
               >New Projects</a
             >
             <a
               href="#"
-              class="text-md tracking-tighter text-slate-600 hover:text-slate-800"
+              class="text-md 2xl:text-2xl tracking-tighter text-slate-600 hover:text-slate-800"
               >Contact</a
             >
           </nav>
-          <div class="flex gap-4">
-            <button
-              class="px-4 py-2 rounded-full bg-slate-200 text-md tracking-tighter"
-            >
-              Sign up
-            </button>
-            <button
-              class="px-4 py-2 rounded-full bg-slate-800 text-slate-50 text-md tracking-tighter"
-            >
-              Login in
-            </button>
-          </div>
+        </div>
+        <div class="hidden lg:flex gap-4">
+          <button
+            class="px-4 py-2 rounded-full bg-slate-200 text-md 2xl:text-lg tracking-tighter"
+          >
+            Sign up
+          </button>
+          <button
+            class="px-4 py-2 rounded-full bg-slate-800 text-slate-50 text-md 2xl:text-lg tracking-tighter"
+          >
+            Log in
+          </button>
         </div>
       </header>
 
       <main>
         <!-- hero section -->
-        <div class="flex px-4 md:px-0 md:pl-4  gap-4">
+        <div class="flex px-4 md:px-0 md:pl-4 gap-4 justify-around min-[1200px]:h-[600px]">
           <!-- left section -->
-          <section class="pt-16 md:pt-24 md:flex-1 lg:flex-[2]">
-            <h1
-              class="text-5xl lg:text-6xl xl:text-8xl font-semibold tracking-tighter leading-tight lg:leading-snug lg:max-w-[30rem] xl:min-w-[40rem]"
-            >
-              Going Above and Beyond To Find Your Next Home
-            </h1>
-            <p
-              class="text-sm lg:text-base xl:text-xl tracking-wide text-justify pt-2 lg:max-w-[30rem]"
-            >
-              No One Has More Experience Or Expertise To Help You Than An Agent
-              Who Is A Realtor. If you have the opportunity to suggest a real
-              estate agent to anyone, think of me A referral from you is the
-              highest compliment I can receive
-            </p>
-            <!-- search properties -->
-            <div
-              class="relative flex items-center bg-slate-200 rounded-full w-fit mt-4"
-            >
-              <!-- search input -->
-              <div class="relative">
-                <span
-                  class="material-symbols-outlined absolute top-2 lg:top-[0.70rem] left-2 lg:left-3 text-sm md:text-base lg:text-xl"
-                >
-                  search
-                </span>
-                <input
-                  type="text"
-                  class="rounded-full px-5 py-3 pl-6 lg:pl-9 w-[4.2rem] md:w-28 lg:w-full text-[10px] md:text-xs lg:text-base bg-transparent tracking-tighter"
-                  placeholder="Search properties"
-                />
-              </div>
 
-              <!-- line -->
-              <div
-                class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[4.5rem] md:left-[6.5rem] lg:left-64"
-              ></div>
-
-              <!-- location -->
-              <div
-                class="rounded-full relative flex items-center pl-2 md:pl-0 lg:pl-3"
+          <section
+            class="pt-16 md:pt-24 md:flex-1 lg:flex-[2] flex justify-center"
+          >
+            <div class="w-3/4 flex flex-col gap-5">
+              <h1
+                class="text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight  leading-tight"
               >
-                <span class="material-symbols-outlined text-sm lg:text-xl">
-                  location_on
-                </span>
-                <select
-                  name="location"
-                  id="location"
-                  class="bg-transparent text-xs lg:text-base tracking-tighter"
-                >
-                  <option selected="selected" class="hidden">Location</option>
-                  <option value="india">India</option>
-                  <option value="australia">Australia</option>
-                  <option value="germany">Germany</option>
-                </select>
-              </div>
-
-              <!-- line -->
-              <div
-                class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[10rem] md:left-[12.2rem] lg:left-[23rem]"
-              ></div>
-
-              <!-- pricing -->
-              <div
-                class="bg-slate-200 rounded-full flex items-center ml-2 md:ml-3 lg:ml-4"
+                Going Above and Beyond To Find Your Next Home
+              </h1>
+              <p
+                class="text-sm lg:text-base  tracking-tight text-justify pt-2 "
               >
-                <span class="material-symbols-outlined text-xs lg:text-xl">
-                  shoppingmode
-                </span>
-                <select
-                  name="pricing"
-                  id="pricing"
-                  class="bg-transparent text-xs lg:text-base tracking-tighter"
-                >
-                  <option class="hidden">Pricing</option>
-                  <option value="100">$100</option>
-                  <option value="200">$200</option>
-                  <option value="300">$300</option>
-                </select>
-              </div>
-
-              <!-- search button -->
-              <button
-                class="bg-slate-800 text-slate-50 px-8 py-3 rounded-full ml-2 text-xs lg:text-base"
-              >
-                Search
-              </button>
-            </div>
-
-            <!-- Happy Clients -->
-            <div class="flex gap-36 pt-5">
-              <div class="flex items-center relative">
-                <div
-                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-0 bg-[url('assets/person.png')] bg-cover"
-                ></div>
-                <div
-                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-6 bg-[url('assets/person.png')] bg-cover"
-                ></div>
-                <div
-                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-12 bg-[url('assets/person.png')] bg-cover"
-                ></div>
-                <div
-                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-[72px] bg-[url('assets/person.png')] bg-cover"
-                ></div>
-                <div
-                  class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-24 bg-[url('assets/person.png')] bg-cover"
-                ></div>
-              </div>
-              <p class="text-sm lg:text-base lg:max-w-96">
-                The best time to buy a home is always five years ago. 500+ Happy
-                Clients in Bangladesh
+                No One Has More Experience Or Expertise To Help You Than An
+                Agent Who Is A Realtor. If you have the opportunity to suggest a
+                real estate agent to anyone, think of me A referral from you is
+                the highest compliment I can receive
               </p>
+              <!-- search properties -->
+              <div
+                class="relative flex items-center bg-slate-200 rounded-full w-fit mt-4"
+              >
+                <!-- search input -->
+                <div class="relative">
+                  <span
+                    class="material-symbols-outlined absolute top-2 lg:top-[0.70rem] left-2 lg:left-3 text-sm md:text-base lg:text-xl"
+                  >
+                    search
+                  </span>
+                  <input
+                    type="text"
+                    class="rounded-full px-5 py-3 pl-6 lg:pl-9 w-[4.2rem] md:w-28 lg:w-full text-[10px] md:text-xs lg:text-base bg-transparent tracking-tighter"
+                    placeholder="Search properties"
+                  />
+                </div>
+
+                <!-- line -->
+                <div
+                  class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[4.5rem] md:left-[6.5rem] lg:left-64"
+                ></div>
+
+                <!-- location -->
+                <div
+                  class="rounded-full relative flex items-center pl-2 md:pl-0 lg:pl-3"
+                >
+                  <span class="material-symbols-outlined text-sm lg:text-xl">
+                    location_on
+                  </span>
+                  <select
+                    name="location"
+                    id="location"
+                    class="bg-transparent text-xs lg:text-base tracking-tighter"
+                  >
+                    <option selected="selected" class="hidden">Location</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="germany">Germany</option>
+                  </select>
+                </div>
+
+                <!-- line -->
+                <div
+                  class="w-[1px] h-5 lg:h-12 bg-slate-300 absolute left-[10rem] md:left-[12.2rem] lg:left-[23rem]"
+                ></div>
+
+                <!-- pricing -->
+                <div
+                  class="bg-slate-200 rounded-full flex items-center ml-2 md:ml-3 lg:ml-4"
+                >
+                  <span class="material-symbols-outlined text-xs lg:text-xl">
+                    shoppingmode
+                  </span>
+                  <select
+                    name="pricing"
+                    id="pricing"
+                    class="bg-transparent text-xs lg:text-base tracking-tighter"
+                  >
+                    <option class="hidden">Pricing</option>
+                    <option value="100">$100</option>
+                    <option value="200">$200</option>
+                    <option value="300">$300</option>
+                  </select>
+                </div>
+
+                <!-- search button -->
+                <button
+                  class="bg-slate-800 text-slate-50 px-8 py-3 rounded-full ml-2 text-xs lg:text-base"
+                >
+                  Search
+                </button>
+              </div>
+
+              <!-- Happy Clients -->
+              <div class="flex gap-36 pt-5">
+                <div class="flex items-center relative">
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-0 bg-[url('assets/person.png')] bg-cover"
+                  ></div>
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-6 bg-[url('assets/person.png')] bg-cover"
+                  ></div>
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-12 bg-[url('assets/person.png')] bg-cover"
+                  ></div>
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-[72px] bg-[url('assets/person.png')] bg-cover"
+                  ></div>
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full border-2 border-slate-50 absolute left-24 bg-[url('assets/person.png')] bg-cover"
+                  ></div>
+                </div>
+                <p class="text-sm">
+                  The best time to buy a home is always five years ago. 500+
+                  Happy Clients in Bangladesh
+                </p>
+              </div>
             </div>
           </section>
 
           <!-- right section -->
           <section class="flex-1 hidden md:block">
-            <img src="./assets/window.jpg" alt="house1" class="h-full" />
+            <!-- <img src="./assets/window.jpg" alt="house1" class="w-full h-full 2xl:h-3/4" /> -->
+            <img src="./assets/window.jpg" alt="house1" class="w-full h-full object-cover" />
           </section>
         </div>
         <!-- end hero -->
@@ -306,9 +313,7 @@
           </div>
 
           <!-- About -->
-          <section
-            class="flex gap-6 lg:gap-8 xl:gap-12 flex-wrap  bg-slate-200"
-          >
+          <section class="flex gap-6 lg:gap-8 xl:gap-12 flex-wrap bg-slate-100">
             <!-- left  -->
             <div class="flex flex-col gap-2 flex-1">
               <img
@@ -317,7 +322,7 @@
                 class="h-full object-cover"
               />
               <!-- social media -->
-              <div class="flex gap-3 items-center justify-end">
+              <div class="flex gap-3 md:gap-8 items-center justify-end">
                 <img
                   src="./assets/social media/linkedin.png"
                   alt=""
@@ -343,7 +348,7 @@
 
             <!-- right -->
             <div
-              class="flex flex-col gap-5 xl:gap-10 flex-1 lg:flex-[2] xl:pt-2"
+              class="flex flex-col gap-5 xl:gap-10 flex-1 lg:flex-[2] xl:pt-2 md:pr-5 lg:pr-12 xl:pr-32"
             >
               <h1 class="text-5xl md:text-6xl xl:text-7xl">About Us</h1>
               <h3
@@ -665,7 +670,7 @@
         <section class="pt-8">
           <hr class="bg-slate-300 w-full h-[2px]" />
           <div class="flex flex-col items-center gap-6 mt-10">
-            <div class="flex items-center gap-1 md:gap-3 ">
+            <div class="flex items-center gap-1 md:gap-3">
               <img src="assets/logo.png" alt="logo" />
               <h5 class="text-md md:text-2xl font-bold">SAJIBUR</h5>
             </div>
@@ -686,24 +691,42 @@
                 alt=""
                 class="w-5 md:w-6 h-5 md:h-6 object-contain"
               />
-              <img src="./assets/social media/twitter.png" alt="" class="w-5 md:w-7" />
+              <img
+                src="./assets/social media/twitter.png"
+                alt=""
+                class="w-5 md:w-7"
+              />
             </div>
 
             <div class="flex items-center text-slate-500 gap-4 md:gap-14 pt-5">
-              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl">Home</a>
-              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+              <a
+                href="#"
+                class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
                 >About</a
               >
-              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+              <a
+                href="#"
+                class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
                 >Property</a
               >
-              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+              <a
+                href="#"
+                class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
                 >Projects</a
               >
-              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+              <a
+                href="#"
+                class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
                 >Pricing</a
               >
-              <a href="#" class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
+              <a
+                href="#"
+                class="hover:text-slate-900 tracking-tighter text-sm md:text-base lg:text-xl"
                 >Contact</a
               >
             </div>
@@ -713,8 +736,12 @@
             </div>
 
             <div class="flex justify-between w-full px-4 lg:px-20">
-              <p class="text-xs md:text-sm  lg:text-lg text-slate-500">SAJIBUR International Ltd.2023</p>
-              <p class="text-xs md:text-sm lg:text-lg text-slate-500">Terms and Conditions</p>
+              <p class="text-xs md:text-sm lg:text-lg text-slate-500">
+                SAJIBUR International Ltd.2023
+              </p>
+              <p class="text-xs md:text-sm lg:text-lg text-slate-500">
+                Terms and Conditions
+              </p>
             </div>
           </div>
         </section>
